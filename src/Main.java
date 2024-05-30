@@ -12,5 +12,11 @@ public class Main {
         System.out.println("\nInformacion del Auto:");
         miAutomovil.mostrarInformacion();
         miAutomovil.acelerar();
+
+        //creamos el objeto y mostramos la información del motocicleta
+        Motocicleta miMotocicleta = new Motocicleta("Yamaha", "YZF-R3", 180, "Deportivo");
+        System.out.println("\nInformacion de la Motocicleta:");
+        miMotocicleta.mostrarInformacion();
+        miMotocicleta.acelerar();
     }
 }

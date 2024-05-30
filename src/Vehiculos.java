@@ -42,3 +42,22 @@ class Automovil extends Vehiculo {
         System.out.println("El automovil está acelerando.");
     }
 }
+
+// Clase derivada Motocicleta(nieta)
+//Echo Por Richard Robalino
+class Motocicleta extends Vehiculo {
+    String tipoDeManillar;
+
+    public Motocicleta(String marca, String modelo, int velocidadMaxima, String tipoDeManillar) {
+        super(marca, modelo, velocidadMaxima);
+        this.tipoDeManillar = tipoDeManillar;
+    }
+
+    public void mostrarInformacion() {
+        super.mostrarInformacion();
+        System.out.println("Tipo de manillar: " + tipoDeManillar);
+    }
+    public void acelerar() {
+        System.out.println("La motocicleta esta acelerando.");
+    }
+}
